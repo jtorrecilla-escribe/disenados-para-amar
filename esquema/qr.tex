@@ -1,0 +1,36 @@
+% Página QR para tablet — compilar con lualatex
+\documentclass[a4paper]{article}
+\usepackage[margin=1cm]{geometry}
+\usepackage{fontspec}
+\setsansfont{Calibri}[Ligatures=TeX]
+\usepackage{graphicx}
+\graphicspath{{../img/}}
+\usepackage{xcolor}
+\definecolor{noche}{HTML}{1B2838}
+\definecolor{oro}{HTML}{D4A843}
+\definecolor{gris}{HTML}{6B7B8D}
+\pagestyle{empty}
+
+\begin{document}
+
+\vspace*{\fill}
+
+\begin{center}
+  {\sffamily\fontsize{28}{34}\selectfont\bfseries\color{noche}
+    Diseñados para amar}\\[1.5em]
+  {\color{oro}\rule{4cm}{1.5pt}}\\[2em]
+
+  \includegraphics[width=9cm]{qr-landing.png}\\[2em]
+
+  {\sffamily\fontsize{18}{22}\selectfont\color{noche}
+    \texttt{jtorrecilla-escribe.github.io/disenados-para-amar}}\\[1.5em]
+
+  {\sffamily\fontsize{14}{18}\selectfont\color{gris}
+    Descarga libre — PDF · EPUB}\\[0.3em]
+  {\sffamily\normalsize\color{gris}
+    Creative Commons BY 4.0}
+\end{center}
+
+\vspace*{\fill}
+
+\end{document}
