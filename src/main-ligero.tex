@@ -1,0 +1,54 @@
+% ===========================================================
+% Diseñados para amar — Versión sin imágenes (ligera)
+% ===========================================================
+\documentclass[a5paper, 11pt, twoside, openright]{book}
+
+\input{preamble}
+
+% Suprimir viñetas de capítulo
+\renewcommand{\vinetacapitulo}[1]{}
+
+% Suprimir imagen de portada (redefinir \includegraphics solo en titlepage)
+\let\origincludegraphics\includegraphics
+
+\begin{document}
+
+% --- Portada sin imagen ---
+\frontmatter
+
+% Redefinir includegraphics temporalmente para la portada
+\renewcommand{\includegraphics}[2][]{}
+\input{frontmatter/titlepage}
+\let\includegraphics\origincludegraphics
+
+\input{frontmatter/prologo}
+
+\tableofcontents
+
+\mainmatter
+
+\partpage{I}{Hechos para amar}{La dimensión antropológica}
+\addcontentsline{toc}{part}{Hechos para amar}
+
+\input{chapters/cap01-nacer-humano}
+\input{chapters/cap02-cuerpo-que-habla}
+\input{chapters/cap03-quimica-del-vinculo}
+\input{chapters/cap04-amor-no-es-cuento}
+\input{chapters/cap05-dos-y-no-uno-solo}
+\input{chapters/cap06-disenados-para-amar}
+
+\partpage{II}{Llamados a amar}{La vocación al matrimonio cristiano}
+\addcontentsline{toc}{part}{Llamados a amar}
+
+\input{chapters/cap07-no-es-bueno-estar-solo}
+\input{chapters/cap08-la-promesa}
+\input{chapters/cap09-creer-en-ti}
+\input{chapters/cap10-sal-de-la-tierra}
+\input{chapters/cap11-sexualidad-como-don}
+\input{chapters/cap12-familia-comunidad}
+
+\backmatter
+
+\input{backmatter/bibliografia}
+
+\end{document}

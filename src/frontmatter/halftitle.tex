@@ -1,0 +1,20 @@
+% ===========================================================
+% Portadilla (half title) — solo el título, limpia
+% ===========================================================
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  % --- Fondo blanco con franja sutil en el lomo ---
+  \fill[noche, opacity=0.04]
+    (current page.north west) rectangle
+    ([xshift=5mm]current page.south west);
+\end{tikzpicture}
+
+\vspace*{0.35\textheight}
+
+\begin{center}
+  {\sffamily\fontsize{22}{28}\selectfont\bfseries\color{noche}%
+    Diseñados para amar}
+\end{center}
+
+\vfill
+\clearpage

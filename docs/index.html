@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diseñados para amar</title>
+  <style>
+    :root {
+      --noche: #1B2838;
+      --oro: #D4A843;
+      --gris: #6B7B8D;
+      --portada: #0C2233;
+      --blanco: #FAFAF8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      color: var(--noche);
+      background: var(--blanco);
+      line-height: 1.7;
+    }
+    .hero {
+      background: var(--portada);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem 3rem;
+    }
+    .hero h1 {
+      font-family: Calibri, Helvetica, sans-serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .hero .linea {
+      width: 80px;
+      height: 2px;
+      background: var(--oro);
+      margin: 1rem auto;
+    }
+    .hero .subtitulo {
+      font-size: 1.1rem;
+      color: rgba(212, 168, 67, 0.8);
+      font-style: italic;
+    }
+    .hero .autor {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+    }
+    .contenido {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    .contenido p {
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+    .descargas {
+      background: #f4f1ec;
+      padding: 3rem 2rem;
+    }
+    .descargas-inner {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .descargas h2 {
+      font-family: Calibri, Helvetica, sans-serif;
+      color: var(--noche);
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.2rem;
+    }
+    .tarjeta {
+      background: white;
+      border: 1px solid #e0dcd5;
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: box-shadow 0.2s;
+    }
+    .tarjeta:hover {
+      box-shadow: 0 4px 16px rgba(27,40,56,0.12);
+    }
+    .tarjeta .icono {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .tarjeta h3 {
+      font-family: Calibri, Helvetica, sans-serif;
+      font-size: 1.1rem;
+      color: var(--noche);
+      margin-bottom: 0.3rem;
+    }
+    .tarjeta .detalle {
+      font-size: 0.85rem;
+      color: var(--gris);
+      margin-bottom: 1rem;
+    }
+    .tarjeta a {
+      display: inline-block;
+      background: var(--portada);
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: 4px;
+      font-family: Calibri, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .tarjeta a:hover {
+      background: var(--oro);
+      color: var(--noche);
+    }
+    .indice {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 3rem 2rem;
+    }
+    .indice h2 {
+      font-family: Calibri, Helvetica, sans-serif;
+      color: var(--noche);
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .indice .parte {
+      font-family: Calibri, Helvetica, sans-serif;
+      color: var(--oro);
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .indice ol {
+      padding-left: 1.5rem;
+    }
+    .indice li {
+      margin-bottom: 0.4rem;
+      color: var(--noche);
+    }
+    .licencia {
+      background: var(--portada);
+      color: rgba(255,255,255,0.7);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+    .licencia a {
+      color: var(--oro);
+    }
+    .cita {
+      border-left: 3px solid var(--oro);
+      padding-left: 1.2rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>Diseñados para amar</h1>
+  <div class="linea"></div>
+  <div class="subtitulo">Sobre la dimension antropologica<br>del matrimonio y la familia</div>
+  <div class="autor">Jesus Torrecilla Pinero</div>
+</div>
+
+<div class="contenido">
+  <p>
+    Estas paginas nacieron sin pretenderlo. Durante algunos anos he tenido la suerte de
+    participar en cursos de preparacion al matrimonio y de compartir estas ideas en tertulias
+    con amigos, con parejas a punto de casarse y con matrimonios que llevan ya un buen
+    trecho recorrido.
+  </p>
+  <div class="cita">
+    <p>El amor no es un adorno de la vida. Es lo que hizo posible que la vida continuara.</p>
+  </div>
+  <p>
+    Lo que aqui se recoge son reflexiones en voz alta sobre por que estamos hechos para amar,
+    que tiene que ver nuestro cuerpo con el amor, y por que el matrimonio cristiano, lejos
+    de ser un corse, es probablemente el regalo mas grande que dos personas pueden hacerse.
+  </p>
+</div>
+
+<div class="descargas">
+  <div class="descargas-inner">
+    <h2>Descarga libre</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <div class="icono">&#128214;</div>
+        <h3>PDF completo</h3>
+        <div class="detalle">Formato A5, con imagenes<br>168 paginas</div>
+        <a href="https://github.com/jtorreci/disenados-para-amar/releases/latest/download/disenados-para-amar.pdf">Descargar PDF</a>
+      </div>
+      <div class="tarjeta">
+        <div class="icono">&#128241;</div>
+        <h3>EPUB</h3>
+        <div class="detalle">Para lectores electronicos<br>Kindle, Kobo, iBooks...</div>
+        <a href="https://github.com/jtorreci/disenados-para-amar/releases/latest/download/disenados-para-amar.epub">Descargar EPUB</a>
+      </div>
+      <div class="tarjeta">
+        <div class="icono">&#128196;</div>
+        <h3>PDF ligero</h3>
+        <div class="detalle">Sin imagenes, 680 KB<br>Ideal para compartir</div>
+        <a href="https://github.com/jtorreci/disenados-para-amar/releases/latest/download/disenados-para-amar-ligero.pdf">Descargar PDF</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="indice">
+  <h2>Indice</h2>
+
+  <div class="parte">Parte I &mdash; Hechos para amar</div>
+  <ol>
+    <li>Nacer humano</li>
+    <li>Un cuerpo que habla</li>
+    <li>La quimica del vinculo</li>
+    <li>El amor no es un cuento</li>
+    <li>Dos, y no uno solo</li>
+    <li>Disenados para amar</li>
+  </ol>
+
+  <div class="parte">Parte II &mdash; Llamados a amar</div>
+  <ol start="7">
+    <li>No es bueno estar solo</li>
+    <li>La promesa que nadie te va a hacer</li>
+    <li>Creer en ti mas que tu mismo</li>
+    <li>Sal de la tierra</li>
+    <li>Sexualidad como don</li>
+    <li>La familia, comunidad de amor</li>
+  </ol>
+</div>
+
+<div class="licencia">
+  <p>
+    &copy; 2026 Jesus Torrecilla Pinero<br>
+    Distribuido bajo licencia
+    <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+      Creative Commons Atribucion 4.0 Internacional (CC BY 4.0)
+    </a><br><br>
+    Comentarios y sugerencias: <a href="mailto:jtorrecilla@gmail.com">jtorrecilla@gmail.com</a>
+  </p>
+</div>
+
+</body>
+</html>

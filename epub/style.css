@@ -1,0 +1,36 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  margin: 1em;
+  color: #1A1A1A;
+}
+h1 {
+  font-family: Calibri, Helvetica, sans-serif;
+  color: #1B2838;
+  font-size: 1.6em;
+  margin-top: 2em;
+  page-break-before: always;
+}
+h2 {
+  font-family: Calibri, Helvetica, sans-serif;
+  color: #1B2838;
+  font-size: 1.2em;
+  margin-top: 1.5em;
+}
+blockquote {
+  margin: 1em 1.5em;
+  padding-left: 1em;
+  border-left: 3px solid #D4A843;
+  font-style: italic;
+  color: #333;
+}
+.footnotes {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 2em;
+  border-top: 1px solid #D4A843;
+  padding-top: 0.5em;
+}
+ol { margin: 1em 0; padding-left: 1.5em; }
+ol li { margin-bottom: 0.8em; }
+img { max-width: 60%; display: block; margin: 1.5em auto; }

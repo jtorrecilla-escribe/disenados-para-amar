@@ -1,0 +1,341 @@
+% ===========================================================
+% Esquema de charla — Diseñados para amar
+% Duración: ~30 minutos
+% Compilar con: lualatex charla.tex
+% ===========================================================
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage{fontspec}
+\setmainfont{EB Garamond}[Numbers=OldStyle, Ligatures=TeX]
+\setsansfont{Calibri}[Ligatures=TeX]
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.35}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{mdframed}
+\usepackage{graphicx}
+\graphicspath{{../img/}}
+
+\definecolor{noche}{HTML}{1B2838}
+\definecolor{oro}{HTML}{D4A843}
+\definecolor{gris}{HTML}{6B7B8D}
+
+% Formato de secciones
+\titleformat{\section}
+  {\normalfont\Large\bfseries\sffamily\color{noche}}
+  {\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{1.5em}{0.8em}
+
+% Entorno para citas del libro (leer en voz alta)
+\newmdenv[
+  backgroundcolor=noche!5,
+  linecolor=oro,
+  linewidth=1.5pt,
+  leftline=true,
+  rightline=false,
+  topline=false,
+  bottomline=false,
+  innerleftmargin=12pt,
+  innerrightmargin=12pt,
+  innertopmargin=8pt,
+  innerbottommargin=8pt,
+  skipabove=10pt,
+  skipbelow=10pt
+]{citalibro}
+
+% Comando para referencia al libro
+\newcommand{\reflibro}[1]{%
+  {\small\sffamily\color{gris} → Libro: #1}%
+}
+
+% Comando para nota al orador (instrucciones escénicas)
+\newcommand{\nota}[1]{%
+  \par\smallskip
+  {\small\itshape\color{oro!80!black} [\,#1\,]}%
+  \par\smallskip
+}
+
+% Comando para transición
+\newcommand{\transicion}[1]{%
+  \par\medskip
+  {\sffamily\color{gris}\bfseries ↳ #1}%
+  \par\medskip
+}
+
+\usepackage[hidelinks]{hyperref}
+
+\begin{document}
+
+% --- Título ---
+\begin{center}
+  {\sffamily\fontsize{22}{26}\selectfont\bfseries\color{noche}
+    Diseñados para amar}\\[6pt]
+  {\sffamily\large\color{gris}
+    Esquema narrativo para una charla de 30 minutos}\\[4pt]
+  {\sffamily\normalsize\color{gris}\itshape
+    Jesús Torrecilla Pinero}
+\end{center}
+
+\vspace{0.8em}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.5em}
+
+\noindent{\sffamily\small\color{gris}
+\textbf{Estructura:} 5 bloques de $\sim$6 minutos.
+Las cajas doradas son citas del libro para leer en voz alta.
+El texto normal es narrativo: puedes leerlo tal cual o usarlo como guía.
+Las notas en cursiva dorada son instrucciones para ti.}
+
+\vspace{1.2em}
+
+% ===========================================================
+\section{Nacemos para necesitar (6 min)}
+% ===========================================================
+
+Quiero empezar con un dato que a mí me sorprendió la primera vez que lo leí. De todos los mamíferos que existen en la Tierra, el ser humano es el que nace más indefenso. Y no es casualidad: es consecuencia directa de las dos cosas que nos hacen humanos.
+
+Hace unos cuatro millones de años, nuestros antepasados empezaron a caminar erguidos. Eso fue una revolución: liberó las manos, permitió ver por encima de la hierba, gastaba menos energía. Pero tuvo un precio. Para caminar sobre dos piernas, la pelvis tuvo que estrecharse. Y al mismo tiempo, nuestro cerebro empezó a crecer. Más neuronas, más conexiones, más capacidad. Más inteligencia. Pero también una cabeza cada vez más grande.
+
+Y ahí está el problema: una pelvis que se estrecha y una cabeza que crece. ¿Cómo pasa esa cabeza enorme por ese canal tan estrecho? La evolución encontró una solución ingeniosa: adelantar el parto. Nacer antes de estar listos.
+
+\nota{Pausa breve. Dejar que la imagen aterrice.}
+
+Si un bebé humano naciera con el mismo grado de madurez que un chimpancé recién nacido, el embarazo debería durar entre 18 y 21 meses. Pero con 18 meses de desarrollo, o la cabeza no cabría o la madre no podría sostener el coste energético. Así que nacemos a los nueve meses. A medio hacer.
+
+Un potro se levanta y camina a la hora de nacer. Un cervatillo sigue a su madre por el bosque en su primer día. Un bebé humano no puede ni sostener la cabeza. No regula su temperatura. Su visión es borrosa. Durante meses, es absolutamente incapaz de sobrevivir solo.
+
+¿Y qué hizo la biología con esa vulnerabilidad? Inventó el amor. Literalmente. La naturaleza respondió inundando a la madre de oxitocina en el parto, activando circuitos cerebrales de cuidado, bajando la testosterona del padre para hacerlo más protector. Creó un sistema hormonal entero cuya única función es que dos adultos se queden junto a una criatura indefensa el tiempo suficiente para que sobreviva.
+
+\begin{citalibro}
+``Somos la especie que nace con la cabeza sin cerrar, que llora para llamar a alguien, que necesita años de cuidado antes de poder valerse por sí misma. Somos la especie que, para sobrevivir, tuvo que aprender a amar.''
+\end{citalibro}
+\reflibro{Cap.\ 1 — \emph{Nacer humano}}
+
+Y aquí viene lo que a mí me parece más revelador: no es solo la madre. Cuando un padre cuida a su hijo, su cerebro cambia. Le baja la testosterona, le sube la oxitocina. El padre no está ahí por obligación social: está ahí porque su cuerpo se transforma para quedarse. La biología no distingue entre madre y padre a la hora de vincular.
+
+\begin{citalibro}
+``El amor no es un adorno de la vida. Es lo que hizo posible que la vida continuara.''
+\end{citalibro}
+\reflibro{Cap.\ 1 — \emph{Nacer humano}}
+
+\transicion{Pero la biología del vínculo no se detiene en la relación padres-hijo. También actúa en la pareja. Y ahí es donde las cosas se ponen interesantes.}
+
+% ===========================================================
+\section{La química del amor, y lo que viene después (6 min)}
+% ===========================================================
+
+Todos recordamos cómo es el enamoramiento. No puedes dejar de pensar en la otra persona. Todo lo que hace te parece fascinante. Te cuesta dormir, te cuesta comer, te cuesta concentrarte en cualquier cosa que no sea ella o él.
+
+Pues bien: eso tiene una explicación bioquímica muy precisa. El enamoramiento es un cóctel de dopamina (la hormona de la recompensa y la motivación), noradrenalina (que te pone alerta, te acelera el corazón) y serotonina \emph{baja}. Esa bajada de serotonina es muy llamativa, porque es la misma que se observa en el trastorno obsesivo-compulsivo. El enamoramiento, bioquímicamente, se parece a una obsesión.
+
+\nota{Sonreír. El público se reconocerá.}
+
+¿Y para qué sirve esa obsesión? Para que dos personas se miren el tiempo suficiente como para decidir si se quedan. Es el truco de la naturaleza: hacerte creer que esa persona es lo más importante del universo durante el tiempo justo para que se forme un vínculo.
+
+Pero ---y esto es crucial--- el enamoramiento tiene fecha de caducidad. Dura entre uno y tres años. Después, el cóctel cambia. Y lo que aparece no es el vacío. Es algo distinto y, si me permitís decirlo, algo mejor: el apego. La oxitocina y la vasopresina toman el relevo. Son hormonas más tranquilas, más serenas. No te aceleran el corazón: te dan paz. No te producen obsesión: te producen confianza. Son las mismas hormonas que vinculan a una madre con su bebé.
+
+\nota{Mirar a las parejas que llevan tiempo juntas. Sonreír con complicidad.}
+
+Muchas parejas entran en crisis exactamente en ese punto. Cuando la dopamina se retira y llega la calma, creen que se les ha acabado el amor. Pero no se les ha acabado: se les ha transformado. La película siempre acaba en el beso. Pero lo interesante empieza después del beso.
+
+\begin{citalibro}
+``El ser humano es el único animal que puede decirle que no a sus hormonas. El único que puede elegir contra su instinto. Y el único que puede elegir \emph{a favor} de su instinto no porque le arrastre, sino porque libremente decide que esa es la dirección correcta.''
+\end{citalibro}
+\reflibro{Cap.\ 3 — \emph{La química del vínculo}}
+
+Y esto es lo decisivo. Los animales no eligen: la oxitocina les empuja y obedecen. Los topillos de las praderas son monógamos porque su biología les obliga. Nosotros no. Nosotros podemos decirle que sí a nuestras hormonas, o que no. Podemos elegir quedarnos o irnos. Y eso cambia todo. Porque un amor elegido libremente es infinitamente más valioso que un amor impuesto por la química.
+
+\nota{Preguntar al público: ``¿Recordáis los primeros meses? ¿Y ahora? ¿Qué ha cambiado?'' Dejar 20 segundos de silencio.}
+
+\transicion{Entonces, si nuestro cuerpo está tan finamente diseñado para el vínculo, y al mismo tiempo somos libres de aceptarlo o rechazarlo\ldots{} ¿de dónde viene esa doble dotación?}
+
+% ===========================================================
+\section{El puente: de la biología al sentido (6 min)}
+% ===========================================================
+
+Hasta aquí hemos hablado de ciencia. De biología, de hormonas, de evolución. Todo lo que hemos dicho es verificable, medible, publicado en revistas científicas. Y creo que es fascinante.
+
+Pero hay una pregunta que la ciencia describe y no responde. Podemos explicar \emph{cómo} funcionan nuestros mecanismos de vínculo. Podemos medir la oxitocina, escanear el cerebro, comparar topillos monógamos con topillos promiscuos. Lo que la ciencia no puede decirnos es \emph{por qué}. Por qué estamos hechos así. Si hay un sentido detrás del diseño, o si todo es azar ciego.
+
+\nota{Cambio de tono. Más pausado, más íntimo.}
+
+Aquí es donde yo ---y subrayo el ``yo'', porque no estoy demostrando nada, estoy compartiendo una convicción--- doy un paso más. Cuando miro todo lo que hemos repasado ---esa vulnerabilidad que exige cuidado, esa química que empuja al vínculo, esa libertad que nos permite elegir amar---, a mí me parece que todo eso apunta a algo. O, mejor dicho, a Alguien.
+
+La fe cristiana dice que Dios es Amor. No que Dios \emph{tiene} amor, o que Dios \emph{da} amor. Que Dios \emph{es} Amor. Y si estamos hechos a imagen de un Dios que es Amor, entonces tiene todo el sentido del mundo que nuestra biología, nuestras hormonas, nuestra estructura más profunda estén configuradas para amar.
+
+No es que la ciencia demuestre a Dios. No funciona así. Pero lo que la ciencia encuentra encaja de una manera asombrosa con lo que la fe siempre dijo. San Josemaría lo expresó con una imagen que a mí me sigue emocionando:
+
+\begin{citalibro}
+``¡Qué ojos llenos de luz he visto más de una vez, cuando ---creyendo, ellos y ellas, incompatibles en su vida la entrega a Dios y un amor humano noble y limpio--- me oían decir que el matrimonio es un camino divino en la tierra!''
+\end{citalibro}
+\reflibro{San Josemaría, \emph{Conversaciones}, n.~91}
+
+Un camino divino \emph{en la tierra}. No fuera de la tierra, no a pesar de la tierra. En la tierra. Con la biología, con las hormonas, con el cuerpo. Y don Álvaro del Portillo lo decía a los matrimonios con la misma claridad:
+
+\begin{citalibro}
+``Vuestro mismo cariño humano, conyugal, queda elevado al plano sobrenatural de la caridad y es amor a Dios.''
+\end{citalibro}
+\reflibro{Beato Álvaro del Portillo, \emph{Cartas de familia}, vol.~1, n.~386 (1-VII-1988)}
+
+Y hay un detalle del Génesis que a mí me sigue emocionando cada vez que lo leo. De todo lo que Dios crea ---la luz, el mar, los animales---, de todo dice ``es bueno''. Pero hay una sola cosa de la que dice que \emph{no} es buena: ``No es bueno que el hombre esté solo.'' Es la primera vez que algo no es bueno en toda la creación. La soledad. Y la biología dice exactamente lo mismo.
+
+\begin{citalibro}
+``Cuando dos personas se miran a los ojos en el altar y dicen `sí, quiero', están pronunciando la frase más sobrenatural que puede decir un ser humano. No `sí, debo'. No `sí, me toca'. `Sí, quiero.' Libremente. Como Dios nos ama: porque quiere, no porque necesite hacerlo.''
+\end{citalibro}
+\reflibro{Cap.\ 6 — \emph{Diseñados para amar}}
+
+Fijaos: la primera pregunta del rito del matrimonio no es ``¿os queréis?'' ni ``¿estáis preparados?''. Es ``¿venís libremente?''. Porque sin libertad no hay amor. Y eso también lo sabe la biología: somos la única especie que puede elegir amar. Los topillos no tienen mérito. Nosotros sí.
+
+Pero cuidado: ser libre no es hacer lo que te apetece en cada momento. Pensad en alguien que decide correr una maratón. Desde ese día se levanta temprano a entrenar, se somete a dietas, renuncia a salir, aguanta sesiones que no le apetecen nada. ¿Ha dejado de ser libre? Al contrario: es más libre que antes, porque está usando su libertad para algo que ha elegido. O pensad en el opositor que se encierra a estudiar tres años. Renuncia a vacaciones, a vida social, a dormir hasta tarde. ¿Es un esclavo? No. Es alguien que ha decidido libremente labrarse un futuro y acepta el precio.
+
+\nota{Mirar al público. Muchos habrán opositado o conocerán a alguien que lo hizo.}
+
+Pues el matrimonio funciona igual. Elegir a una persona para toda la vida no te quita libertad: la pone al servicio de algo grande. Las renuncias que implica no son cadenas: son el entrenamiento del maratoniano, la disciplina del opositor. El precio libre de una decisión libre.
+
+\transicion{Y si estamos diseñados para amar libremente, ¿qué forma tiene ese amor? ¿Qué lo sostiene? Ahí es donde entran tres palabras que dan un poco de miedo, pero que cuando las miras de cerca resultan ser lo contrario de lo que parecen.}
+
+% ===========================================================
+\section{Las tres columnas: lo que la promesa hace posible (6 min)}
+% ===========================================================
+
+Las tres palabras son: indisolubilidad, fidelidad y fecundidad. Las tres suenan a obligación. Las tres son, en realidad, regalos.
+
+\nota{Levantar tres dedos. Ir bajándolos uno a uno mientras hablas de cada concepto.}
+
+Empecemos por la primera: \textbf{indisolubilidad}. Suena a candado. A puerta sin llave. Pero escuchad esto:
+
+\begin{citalibro}
+``Imagina que alguien te dice: `Yo me quedo contigo. Pase lo que pase. En lo bueno y en lo malo. Cuando estés guapo y cuando no lo estés. Cuando seas encantador y cuando seas insoportable. No me voy. No te voy a dejar. Nunca.' ¿Quién no querría escuchar eso?''
+\end{citalibro}
+\reflibro{Cap.\ 8 — \emph{La promesa}}
+
+\nota{Leer esta cita despacio, mirando al público. Dejar tres segundos de silencio después.}
+
+Eso es la indisolubilidad. No es lo que la Iglesia te exige. Es lo que tu cónyuge te regala. Es el único espacio donde puedes quitarte la máscara del todo, donde no tienes que estar haciendo casting permanente para que te renueven el contrato. Es el hogar. Como decía san Josemaría:
+
+\begin{citalibro}
+``Los casados están llamados a santificar su matrimonio y a santificarse en esa unión; cometerían por eso un grave error, si edificaran su conducta espiritual a espaldas y al margen de su hogar.''
+\end{citalibro}
+\reflibro{San Josemaría, \emph{Es Cristo que pasa}, n.~23}
+
+\begin{citalibro}
+``La indisolubilidad no limita la libertad. La hace posible.''
+\end{citalibro}
+\reflibro{Cap.\ 8 — \emph{La promesa}}
+
+Pensadlo. ¿Cómo vives cuando sabes que la otra persona puede irse en cualquier momento? Vives auditando. Vigilando. Midiendo. ``¿Le sigo gustando? ¿Sigo siendo suficiente?'' Y eso no es libertad: es miedo. Pero cuando alguien te ha dicho ``no me voy'' y lo ha dicho de verdad, entonces puedes respirar. Puedes ser tú.
+
+Ahora la segunda: \textbf{fidelidad}. La palabra viene de \emph{fides}, que en latín significa fe, confianza. No es ``no puedo estar con otros''. Es algo mucho más grande:
+
+\begin{citalibro}
+``Cuando alguien te es fiel, lo que te está diciendo no es `me resigno a no estar con otros'. Lo que te está diciendo es: `Creo en ti. Creo en lo que eres. Creo en lo que puedes llegar a ser. Y apuesto mi vida entera a esa creencia.'\,''
+\end{citalibro}
+\reflibro{Cap.\ 9 — \emph{Creer en ti}}
+
+La fidelidad no es una prohibición. Es un acto de fe en la otra persona. Y esa fe tiene un poder transformador: cuando alguien cree en ti más de lo que tú crees en ti mismo, te conviertes en alguien mejor. No por obligación, sino por correspondencia.
+
+Y la tercera: \textbf{fecundidad}. Y aquí quiero ampliar la mirada, porque fecundidad no es solo tener hijos. Un matrimonio sin hijos puede ser extraordinariamente fecundo: en acogida, en servicio, en esperanza, en todo lo que da vida a su alrededor. La fecundidad es una actitud del alma, no un dato demográfico. Un matrimonio fecundo no es el que llena la casa de hijos. Es el que llena el mundo de esperanza. Don Javier Echevarría lo expresaba así:
+
+\begin{citalibro}
+``La promoción de la familia ---comunión de amor entre un hombre y una mujer, indisoluble y abierta a la vida--- edifica una columna insustituible para el recto ordenamiento de la sociedad, y un cimiento importante para que los hombres alcancen la madurez y la felicidad.''
+\end{citalibro}
+\reflibro{Mons.\ Javier Echevarría, Carta pastoral, 2-X-2011}
+
+\nota{Si hay parejas con dificultades de fertilidad en el público, el matiz de la fecundidad amplia es muy importante. Decirlo con cariño.}
+
+\transicion{Y quiero terminar con algo que cierra el círculo. Porque la historia que hemos contado empieza con un bebé indefenso y acaba en un lugar sorprendente.}
+
+% ===========================================================
+\section{Para qué estamos diseñados (6 min)}
+% ===========================================================
+
+Lo que hemos recorrido esta tarde es, en el fondo, un viaje. Empezamos en la sabana africana, con Lucy caminando sobre dos piernas. Pasamos por las hormonas, por la química del enamoramiento, por la biología del apego. Cruzamos el puente de la fe. Y llegamos a algo muy sencillo: que estamos hechos para el amor. No para un amor de película que dura dos horas, sino para un amor que dura toda la vida y que se construye cada día.
+
+Y quiero ser honesto con una cosa. El matrimonio no siempre funciona. Hay matrimonios que se rompen, y hay dolor real en esas rupturas. Hay separaciones que son actos de dignidad, no de fracaso. La Iglesia lo sabe, y el Papa Francisco lo dice con una claridad que no siempre hemos tenido: esas personas no están excomulgadas, y la comunidad cristiana tiene que ser para ellas hospital de campaña, no aduana.
+
+Pero el hecho de que a veces no funcione no significa que no merezca la pena intentarlo con todo. Como decía Chesterton: ``El ideal cristiano no se ha probado y encontrado insuficiente; se ha encontrado difícil y se ha dejado sin probar.''
+
+\nota{Pausa. Mirar a las parejas.}
+
+Don Fernando Ocáriz lo dice con una sencillez que lo resume todo:
+
+\begin{citalibro}
+``La familia es el lugar nativo del amor; es el primer lugar en el que se hace presente en nuestras vidas el Amor de Dios, más allá de lo que podamos hacer o dejar de hacer.''
+\end{citalibro}
+\reflibro{Mons.\ Fernando Ocáriz, Carta del Prelado, 4-VI-2017}
+
+La familia no tiene que ser perfecta. No tiene que ser la familia de la foto de Navidad. Puede ser torpe, ruidosa, desordenada. Lo que tiene que ser es verdadera. Y la verdad de una familia se mide en algo muy sencillo: en el perdón diario. No los grandes perdones de las películas, sino los pequeños: ``perdona que no te he escuchado'', ``perdona que he llegado tarde'', ``perdona que estaba de mal humor''. Esos perdones diminutos, invisibles, cotidianos, son el pegamento que sostiene todo.
+
+\begin{citalibro}
+``No para la perfección, sino para el amor. No para acertar siempre, sino para volver a intentarlo cada mañana. No para ser una familia de postal, sino para ser una familia de verdad: torpe, ruidosa, desordenada, y llena ---llena hasta los bordes--- de algo que se parece mucho a Dios.''
+\end{citalibro}
+\reflibro{Cap.\ 12 — \emph{La familia, comunidad de amor}}
+
+El libro termina con una imagen que a mí me conmueve. Empieza con un bebé indefenso al que alguien tiene que sostenerle la cabeza. Y acaba con un esposo que llega a las puertas del cielo de la mano de la persona que amó. Del principio al final, la misma historia: alguien que necesita a alguien. Alguien que elige quedarse.
+
+\begin{citalibro}
+``El amor no es un cuento. Es algo mucho mejor que un cuento. Porque los cuentos terminan, y el amor verdadero no tiene por qué hacerlo.''
+\end{citalibro}
+\reflibro{Cap.\ 4 — \emph{El amor no es un cuento}}
+
+Y una última cita de san Josemaría, que es quizá la que mejor resume lo que hemos dicho esta tarde:
+
+\begin{citalibro}
+``El amor debe ser recuperado en cada nueva jornada, y el amor se gana con sacrificio, con sonrisas y con picardía también.''
+\end{citalibro}
+\reflibro{San Josemaría, \emph{Conversaciones}, n.~107}
+
+\nota{Leer la cita con una sonrisa. Pausa larga. Invitar a las parejas a mirarse a los ojos un momento, en silencio. Terminar con: ``Para eso estamos diseñados.''}
+
+\vspace{2em}
+\noindent\rule{\textwidth}{0.4pt}
+\vspace{0.5em}
+
+\begin{center}
+{\sffamily\small\color{gris}
+\textbf{Referencias rápidas por tema}\\[6pt]
+\begin{tabular}{ll}
+Vulnerabilidad y nacimiento & Cap.\ 1--2 \\
+Enamoramiento y apego & Cap.\ 3--4 \\
+Diferencia y complementariedad & Cap.\ 5 \\
+De la biología a la fe & Cap.\ 6 \\
+Matrimonio como alianza & Cap.\ 7 \\
+Indisolubilidad como regalo & Cap.\ 8 \\
+Fidelidad como fe en el otro & Cap.\ 9 \\
+Fecundidad amplia & Cap.\ 10 \\
+Sexualidad como lenguaje & Cap.\ 11 \\
+Familia como comunidad & Cap.\ 12 \\
+\end{tabular}
+}
+\end{center}
+
+\newpage
+
+% ===========================================================
+% Página de descarga — dejar la tablet en la mesa
+% ===========================================================
+
+\thispagestyle{empty}
+\vspace*{\fill}
+
+\begin{center}
+  {\sffamily\fontsize{18}{22}\selectfont\bfseries\color{noche}
+    Descarga el libro completo}\\[1.5em]
+
+  \includegraphics[width=5cm]{../img/qr-landing.png}\\[1.5em]
+
+  {\sffamily\fontsize{14}{18}\selectfont\color{gris}
+    \texttt{jtorreci.github.io/disenados-para-amar}}\\[1em]
+
+  {\sffamily\normalsize\color{gris}
+    PDF · EPUB · Descarga libre\\[0.3em]
+    Licencia Creative Commons BY 4.0}
+\end{center}
+
+\vspace*{\fill}
+
+\end{document}

@@ -1,0 +1,58 @@
+% ===========================================================
+% Diseñados para amar
+% Sobre la dimensión antropológica del matrimonio y la familia
+% ===========================================================
+\documentclass[a5paper, 11pt, twoside, openright]{book}
+
+\input{preamble}
+
+\begin{document}
+
+% --- Portada y páginas preliminares ---
+\frontmatter
+
+\input{frontmatter/titlepage}
+
+\input{frontmatter/prologo}
+
+\tableofcontents
+
+% --- Cuerpo del libro ---
+\mainmatter
+
+% ===========================
+% PARTE I: HECHOS PARA AMAR
+% La dimensión antropológica
+% ===========================
+\partpage{I}{Hechos para amar}{La dimensión antropológica}
+\addcontentsline{toc}{part}{Hechos para amar}
+
+\input{chapters/cap01-nacer-humano}
+\input{chapters/cap02-cuerpo-que-habla}
+\input{chapters/cap03-quimica-del-vinculo}
+\input{chapters/cap04-amor-no-es-cuento}
+\input{chapters/cap05-dos-y-no-uno-solo}
+\input{chapters/cap06-disenados-para-amar}
+
+% ===========================
+% PARTE II: LLAMADOS A AMAR
+% La vocación al matrimonio cristiano
+% ===========================
+\partpage{II}{Llamados a amar}{La vocación al matrimonio cristiano}
+\addcontentsline{toc}{part}{Llamados a amar}
+
+\input{chapters/cap07-no-es-bueno-estar-solo}
+\input{chapters/cap08-la-promesa}
+\input{chapters/cap09-creer-en-ti}
+\input{chapters/cap10-sal-de-la-tierra}
+\input{chapters/cap11-sexualidad-como-don}
+\input{chapters/cap12-familia-comunidad}
+
+% --- Material final ---
+\backmatter
+
+% \printbibliography[title={Bibliografía}]
+
+\input{backmatter/bibliografia}
+
+\end{document}

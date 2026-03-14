@@ -1,0 +1,99 @@
+% ===========================================================
+% Portada — Diseñados para amar
+% Diseño: fondo oscuro azul-petróleo + tipografía sans-serif
+% Imagen central: mano de Dios tocando dos corazones
+% ===========================================================
+\begin{titlepage}
+  \begin{tikzpicture}[remember picture, overlay]
+    % --- Fondo oscuro a sangre ---
+    \fill[portada]
+      (current page.north west) rectangle (current page.south east);
+    % --- Imagen central (detrás del título) ---
+    \node[opacity=0.5] at ([yshift=-0.5cm]current page.center) {%
+      \includegraphics[width=0.85\paperwidth]{portada}%
+    };
+    % --- Vesica piscis sutil como marca de agua ---
+    \begin{scope}[shift={(current page.center)}, yshift=0.5cm]
+      \draw[white, line width=2.5pt, opacity=0.12] (-2cm,0) circle (5cm);
+      \draw[oro,   line width=2.5pt, opacity=0.12] (2cm,0)  circle (5cm);
+    \end{scope}
+    % --- Línea fina decorativa ---
+    \draw[oro, opacity=0.3, line width=0.4pt]
+      ([xshift=12mm, yshift=-12mm]current page.north west) rectangle
+      ([xshift=-10mm, yshift=12mm]current page.south east);
+  \end{tikzpicture}
+
+  \centering
+  \vspace*{0.18\textheight}
+
+  % --- Título (sans-serif, blanco) ---
+  {\sffamily\fontsize{28}{34}\selectfont\bfseries\color{white}%
+    Diseñados para amar}
+
+  \vspace{0.6cm}
+
+  % --- Línea decorativa dorada ---
+  {\color{oro}\lineadecorativa[3.5cm]}
+
+  \vspace{0.6cm}
+
+  % --- Subtítulo (sans-serif, oro claro) ---
+  {\sffamily\fontsize{12}{16}\selectfont\color{oro!70!white}%
+    Sobre la dimensión antropológica\\[3pt]
+    del matrimonio y la familia}
+
+  \vspace{2.5cm}
+
+  % --- Autor (sans-serif, blanco) ---
+  {\sffamily\large\color{white!85!portada} Jesús Torrecilla Pinero}
+
+  \vfill
+
+  \vspace{1.5cm}
+
+\end{titlepage}
+
+% ===========================================================
+% Página de créditos (verso de la portada)
+% ===========================================================
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture, overlay]
+  \fill[noche, opacity=0.04]
+    ([xshift=-5mm]current page.north east) rectangle
+    (current page.south east);
+\end{tikzpicture}
+
+\vspace*{\fill}
+
+\begingroup
+\small\color{negro}
+\noindent\textit{Diseñados para amar}\\
+\textit{Sobre la dimensión antropológica del matrimonio y la familia}
+
+\vspace{1.5em}
+
+\noindent © 2026, Jesús Torrecilla Pinero.
+
+\vspace{1em}
+
+\noindent Esta obra se distribuye bajo licencia\\
+\textbf{Creative Commons Atribución 4.0 Internacional (CC BY 4.0).}\\[0.5em]
+Eres libre de copiar, redistribuir, adaptar y transformar este material
+para cualquier finalidad, incluso comercial, siempre que se reconozca
+la autoría original.\\
+Texto completo de la licencia:\\
+\texttt{https://creativecommons.org/licenses/by/4.0/}
+
+\vspace{1em}
+
+\noindent Comentarios y sugerencias: \texttt{jtorrecilla@gmail.com}
+
+\vspace{1.5em}
+
+\noindent
+% ISBN: 978-XX-XXXX-XXX-X\\
+% Depósito legal: XX-XXXX-XXXX\\
+Primera edición: marzo de 2026
+\endgroup
+\normalsize
+\clearpage
